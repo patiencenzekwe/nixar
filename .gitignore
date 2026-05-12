@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Lambda build artifacts
+function.zip
+response.json
+
+# Accidentally created files
+--*
