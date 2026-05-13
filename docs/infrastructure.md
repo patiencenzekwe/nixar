@@ -8,6 +8,9 @@ eu-west-2 (London)
 ### IAM
 - Role: nixar-lambda-role
 - Policy: AWSLambdaBasicExecutionRole
+- Policy: AWSLambdaKinesisExecutionRole
+- Policy: ComprehendReadOnly
+- Purpose: Least privilege execution role for all Nixar Lambda functions
 
 ### Lambda
 - Function: nixar-hello
@@ -26,3 +29,9 @@ eu-west-2 (London)
 - Batch size: 10
 - Starting position: LATEST
 - Purpose: Automatically triggers Lambda when data arrives on stream
+
+### Comprehend
+- Service: Amazon Comprehend
+- Region: eu-west-2
+- Purpose: NLP sentiment analysis of topic text returning positive, negative, neutral and mixed scores
+- Language: English
