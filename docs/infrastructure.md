@@ -19,3 +19,10 @@ eu-west-2 (London)
 - Shards: 1
 - Retention: 24 hours
 - Purpose: Real-time data pipeline between producers and consumers
+
+### Event Source Mapping
+- Trigger: nixar-sentiment-stream
+- Consumer: nixar-ingestor
+- Batch size: 10
+- Starting position: LATEST
+- Purpose: Automatically triggers Lambda when data arrives on stream
